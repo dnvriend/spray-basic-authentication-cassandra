@@ -1,6 +1,9 @@
 # spray-basic-authentication-cassandra
 We will secure our spray service with Basic Authentication. For this example however, we will only secure the /secure
-context, and not the /api context. 
+context, and not the /api context. The data store will be [Apache Cassandra](http://cassandra.apache.org/), a distributed
+high-performance and high-availablility datastore. The example will be using the 
+[akka-persistence-cassandra](https://github.com/krasserm/akka-persistence-cassandra) extension by 
+[Martin Krasser](https://github.com/krasserm) to store Actor state.
 
 # Command Query Responsibility Segregation (CQRS)
 CQRS is the principle that uses separate Query and Command objects to retrieve and modify data. It can be used with 
